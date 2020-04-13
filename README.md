@@ -1,6 +1,7 @@
-<img style="float:left;" width="200" src="./assets/logo.png"> 
 
 # go-gRPC-examples
+
+<img style="float: right;" width="200" src="./assets/logo.png"> 
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/itsksaurabh/go-grpc-examples)](https://goreportcard.com/report/github.com/itsksaurabh/go-grpc-examples)
 [![MIT License](https://img.shields.io/github/license/itsksaurabh/go-grpc-examples?style=social)](./LICENSE)
