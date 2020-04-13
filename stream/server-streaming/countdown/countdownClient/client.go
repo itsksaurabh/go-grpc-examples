@@ -20,8 +20,10 @@ func main() {
 
 	c := countdownpb.NewCountDownClient(conn)
 
+	// timer to start countdown for 10 sec
 	timer := int32(10)
 
+	// call Start service
 	stream, err := c.Start(context.Background(), &countdownpb.CountdownRequest{Timer: timer})
 	if err != nil {
 		log.Fatalf("failed to start timer: %v", err)

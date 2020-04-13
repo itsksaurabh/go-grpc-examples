@@ -6,7 +6,6 @@ import (
 	"net"
 
 	"github.com/itsksaurabh/udemy/grpc/unary/sum/sumpb"
-
 	"google.golang.org/grpc"
 )
 
@@ -27,6 +26,7 @@ func main() {
 
 }
 
+// Add returns sum of two integers
 func (*server) Add(ctx context.Context, req *sumpb.SumRequest) (*sumpb.SumResponse, error) {
 	a, b := req.GetNumbers().GetA(), req.GetNumbers().GetB()
 	sum := a + b

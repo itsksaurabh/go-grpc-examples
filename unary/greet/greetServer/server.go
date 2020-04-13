@@ -5,8 +5,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/itsksaurabh/udemy/grpc/greet/greetpb"
-
+	"github.com/itsksaurabh/udemy/grpc/unary/greet/greetpb"
 	"google.golang.org/grpc"
 )
 
@@ -26,6 +25,7 @@ func main() {
 	}
 }
 
+// Greet greets with FirstName
 func (*server) Greet(ctx context.Context, in *greetpb.GreetRequest) (*greetpb.GreetResponse, error) {
 	result := "Hello " + in.GetGreeting().GetFirstName()
 	res := greetpb.GreetResponse{
