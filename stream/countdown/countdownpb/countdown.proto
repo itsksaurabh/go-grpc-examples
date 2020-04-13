@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package countdown;
+option go_package="countdownpb";
+
+message CountdownRequest {
+    int32 Timer = 1;
+}
+
+message CountDownResponse {
+    int32 count = 1;
+}
+
+service CountDown {
+    // streaming rpc
+    rpc Start(CountdownRequest) returns (stream CountDownResponse){};
+}
