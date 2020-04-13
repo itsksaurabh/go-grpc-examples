@@ -1,4 +1,9 @@
-# go-grpc-examples
+<img style="float:left;" width="200" src="./assets/logo.png"> 
+
+# go-gRPC-examples
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/itsksaurabh/go-grpc-examples)](https://goreportcard.com/report/github.com/itsksaurabh/go-grpc-examples)
+[![MIT License](https://img.shields.io/github/license/itsksaurabh/go-grpc-examples?style=social)](./LICENSE)
 
 This repo contains examples and implementations of different types of GRPC services and APIs using [Golang](https://golang.org/).
 
