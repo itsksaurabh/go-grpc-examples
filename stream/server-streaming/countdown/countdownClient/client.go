@@ -6,8 +6,7 @@ import (
 	"io"
 	"log"
 
-	"github.com/itsksaurabh/udemy/grpc/stream/countdown/countdownpb"
-
+	"github.com/itsksaurabh/udemy/grpc/stream/server-streaming/countdown/countdownpb"
 	"google.golang.org/grpc"
 )
 
