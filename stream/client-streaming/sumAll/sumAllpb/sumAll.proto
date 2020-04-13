@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package sumall;
+option go_package= "sumallpb";
+
+message NumberRequest {
+    int32 n = 1;
+}
+
+message SumResponse {
+    int32 Result = 1;
+}
+
+service SumAllService{
+    // client streaming rpc service
+    rpc SumAll(stream NumberRequest) returns (SumResponse){};
+}
